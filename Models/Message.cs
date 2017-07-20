@@ -11,6 +11,7 @@ namespace AlexaMessageBuilder.Models
         [JsonProperty("response")]
         public Response Response { get; set; } = new Response();
 
+        [JsonProperty("sessionAttributes")]
         public Dictionary<string, object> SessionAttributes;
     }
 }
