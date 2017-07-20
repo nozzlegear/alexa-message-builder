@@ -1,12 +1,13 @@
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace AlexaMessageBuilder.Enums
 {
     public enum CardType
     {
-        [EnumMember(Value = "Simple")]
+        [EnumMember(Value = "simple"), JsonProperty("simple")]
         Simple,
-        [EnumMember(Value = "Standard")]
+        [EnumMember(Value = "standard"), JsonProperty("standard")]
         Standard
     }
 }
