@@ -7,9 +7,9 @@ namespace AlexaMessageBuilder.Enums
     [JsonConverter(typeof(StringEnumConverter))]
     public enum CardType
     {
-        [EnumMember(Value = "simple")]
+        [EnumMember(Value = "Simple")]
         Simple,
-        [EnumMember(Value = "standard")]
+        [EnumMember(Value = "Standard")]
         Standard
     }
 }

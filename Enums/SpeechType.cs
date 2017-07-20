@@ -7,9 +7,9 @@ namespace AlexaMessageBuilder.Enums
     [JsonConverter(typeof(StringEnumConverter))]
     public enum SpeechType
     {
-        [EnumMember(Value = "text")]
+        [EnumMember(Value = "PlainText")]
         PlainText,
-        [EnumMember(Value = "ssml")]
+        [EnumMember(Value = "SSML")]
         SSML
     }
 }

@@ -13,12 +13,6 @@ namespace AlexaMessageBuilder.Models
         [JsonProperty("outputSpeech")]
         public OutputSpeech OutputSpeech { get; set; }
 
-        [JsonProperty("ssml")]
-        public string SSML { get; set; }
-
-        [JsonProperty("text")]
-        public string Text { get; set; }
-
         /// <summary>
         /// An optional Card to display in the Alexa app or on an Alexa Show device.
         /// </summary>

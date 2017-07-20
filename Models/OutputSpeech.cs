@@ -12,5 +12,11 @@ namespace AlexaMessageBuilder.Models
 
         [JsonProperty("type")]
         public SpeechType Type { get; set; }
+
+        [JsonProperty("text")]
+        public string Text { get; set; }
+
+        [JsonProperty("ssml")]
+        public string SSML { get; set; }
     }
 }

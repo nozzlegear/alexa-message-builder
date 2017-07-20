@@ -49,11 +49,11 @@ namespace AlexaMessageBuilder
 
             if (speechType == SpeechType.PlainText)
             {
-                response.Text = speech;
+                response.OutputSpeech.Text = speech;
             }
             else
             {
-                response.SSML = speech;
+                response.OutputSpeech.SSML = speech;
             }
 
             return this;
