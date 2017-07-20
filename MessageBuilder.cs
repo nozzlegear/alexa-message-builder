@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using AlexaMessageBuilder.Enums;
 using AlexaMessageBuilder.Models;
+using Newtonsoft.Json;
 
 namespace AlexaMessageBuilder
 {
@@ -95,9 +96,17 @@ namespace AlexaMessageBuilder
             return this;
         }
 
-        public Message BuildMessage()
+        public Message BuildMessageObject()
         {
             return this.Message;
+        }
+
+        public string BuildMessageJson()
+        {
+            return JsonConvert.SerializeObject(this.BuildMessageObject(), new JsonSerializerSettings()
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            });
         }
     }
 }
