@@ -1,8 +1,12 @@
+using System.Runtime.Serialization;
+
 namespace AlexaMessageBuilder.Enums
 {
     public enum SpeechType
     {
-        PlainText = 0,
-        SSML = 1
+        [EnumMember(Value = "text")]
+        PlainText,
+        [EnumMember(Value = "ssml")]
+        SSML
     }
 }
